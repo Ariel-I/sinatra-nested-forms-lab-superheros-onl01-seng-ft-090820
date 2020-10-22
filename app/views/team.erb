@@ -3,20 +3,11 @@
 
 <h2>Team Motto: <% @team.motto %> </h2>
 
-<div class="Hero">
-  <h3>Name: <%= @hero.name %></h3>
-  <h4>Power: <%= @hero.power %></h4>
-  <h4>Biography: <%= @hero.bio %></h4>
-</div><br>
 
-<h1>Hero One</h1>
-  <% @hero.each.with_index do |ship, index| %>
-  <div class="ship">
-    <% if index == 0 %>
-    <h3>Name: <%= ship.name%></h3>
-    <h3>Type: <%= ship.type %></h3>
-    <h3>Booty: <%= ship.booty %></h3><br>
-    <% end %>
-  <% end %>
- </div><br>
+
+<% @super_heroes.each do |hero| %>
+  <h2>Hero Name: <%= hero.name %></h2>
+  <p>Hero Power: <%= hero.power %></p>
+  <p>Hero Biography: <%= hero.bio %></p>
+<% end %>
 
