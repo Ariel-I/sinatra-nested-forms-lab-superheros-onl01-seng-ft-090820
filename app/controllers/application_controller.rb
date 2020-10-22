@@ -10,7 +10,7 @@ class App < Sinatra::Base
     erb :super_hero
   end 
   
-  post "/" do 
+  get "/" do 
     erb :super_hero
   end 
   
