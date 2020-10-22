@@ -4,6 +4,7 @@ class Hero
   
   HEROS = []
   
-  def initialize(name)
+  def initialize(params)
+    @name = params[:name]
   
 end 
