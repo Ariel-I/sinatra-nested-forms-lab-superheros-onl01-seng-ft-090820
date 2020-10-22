@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<h1> Team Flatiron </h1>
+<h1> Team <% @team.name %> </h1>
 
-<h2>Team Motto: <% @motto %> </h2>
+<h2>Team Motto: <% @team.motto %> </h2>
 
 <div class="Hero">
   <h3>Name: <%= @hero.name %></h3>
@@ -10,7 +10,7 @@
 </div><br>
 
 <h1>Hero One</h1>
-  <% @ships.each.with_index do |ship, index| %>
+  <% @hero.each.with_index do |ship, index| %>
   <div class="ship">
     <% if index == 0 %>
     <h3>Name: <%= ship.name%></h3>
