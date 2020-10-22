@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <h1> Team Flatiron </h1>
 
-<div class="hero">
+<h2>Team Motto: <% @motto %> </h2>
+
+<div class="Hero">
   <h3>Name: <%= @hero.name %></h3>
-  <h3>Power: <%= @hero.power %></h3>
-  <h3>Biography: <%= @hero.bio %></h3>
+  <h4>Power: <%= @hero.power %></h4>
+  <h4>Biography: <%= @hero.bio %></h4>
 </div><br>
 
-
+<h1>Hero One</h1>
+  <% @ships.each.with_index do |ship, index| %>
+  <div class="ship">
+    <% if index == 0 %>
+    <h3>Name: <%= ship.name%></h3>
+    <h3>Type: <%= ship.type %></h3>
+    <h3>Booty: <%= ship.booty %></h3><br>
+    <% end %>
+  <% end %>
+ </div><br>
 
